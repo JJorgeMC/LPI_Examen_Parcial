@@ -32,42 +32,44 @@ body{
 }
 #logo{
     margin-top: -30px;
+    margin-right: 10px;
     float: left;
 }
-#hrr{
-    margin-left: px;
+#hrr{    
     background-color: #21618C;
     height: 1px;
     font-size: 10px;
-    border: 1px solid #21618C;
-    
-    
+    border: 1px solid #21618C;        
 }
 header{
     padding-top: 30px;
-    height: 120px;
+    height: 120px;    
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.font-tittle{
     font-size: 60px;
     font-family: GreatVibes;
     color: #21618C;
-    margin: 10px;
-
 }
+
 nav{
     background: #21618C;
     width: 870px;
-    height: 39.49px;
+    height: 43.49px;
     padding-left: 30px;
     
 }
 ul li{            
-    display: inline;
+    display: inline;    
 }
 ul li a{
     background: #21618C;
     text-decoration: none;
     padding: 6px 50px 6px 50px;
     float: left;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     font-family: BadScript;
 
@@ -76,21 +78,210 @@ li:hover{
     
 }
 aside{
-    width: 870px;
+    margin: 0 px;
+    width: 880px;
     height: 500px;
+    padding: 30px 10px 10px 10px;
+    
 }
-#inicio{
-    display: unset;
+#aInicio{    
+    text-align: center;
+    color: red;
+    font-family: GreatVibes;
+    font-size: 70px;
 }
-#ventas{
+#aVentas{
+    display: none;
+    text-align: left;
+}
+#aVentas form{
+    
+}
+.font-label{
+    font-size: 15px;
+    font-weight: bold;    
+    font-family: BadScript;
+}
+#aVentas input[type=text], #aVentas input[type=number]{     
+    width: 180px;
+    margin-top: 10px; 
+    margin-right: 5px;
+    padding-left: 8px;
+    height: 24px;
+}
+#aVentas input::-webkit-inner-spin-button, #aVentas input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.button-ventas{            
+    margin-top: 10px;
+    margin-left: 55px;
+    width: 100px;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+}
+#aReportes{
     display: none;
 }
-#reportes{
+#aClientes{
     display: none;
 }
-#clientes{
+#aProductos{
     display: none;
 }
-#productos{
-    display: none;
-}
+
+/* Estilos para la tabla de clientes */
+
+table.tableClientes {
+    position: relative;
+    top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E5E5E5;
+    width: 80%;    
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.tableClientes td, table.tableClientes th {
+    border: 1px solid #E5E5E5;
+    padding: 3px 2px;
+  }
+  table.tableClientes tbody td {
+    font-size: 18px;
+  }
+  table.tableClientes tr:nth-child(even) {
+    background: #FFFFFF;
+  }
+  table.tableClientes thead {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);    
+  }
+  table.tableClientes thead tr{
+    height: 30px; 
+  }
+  table.tableClientes thead th {       
+    text-align: left;      
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
+  table.tableClientes tbody tr{
+      height: 30px;
+  }
+  table.tableClientes tfoot td {
+    font-size: 14px;
+  }
+  table.tableClientes tfoot .links {
+    text-align: right;
+  }
+  table.tableClientes tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  /* tabla de productos */
+
+  table.tableProductos {
+    position: relative;
+    top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E5E5E5;
+    width: 80%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.tableProductos td, table.tableProductos th {
+    border: 1px solid #E5E5E5;
+    padding: 3px 2px;
+  }
+  table.tableProductos tbody td {
+    font-size: 18px;
+  }
+  table.tableProductos tr:nth-child(even) {
+    background: #FFFFFF;
+  }
+  table.tableProductos thead {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  }
+  table.tableProductos thead tr{
+    height: 30px;
+  }
+  table.tableProductos thead th {    
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
+  table.tableProductos tbody tr{
+      height: 30px;
+  }
+  table.tableProductos tfoot td {
+    font-size: 14px;
+  }
+  table.tableProductos tfoot .links {
+    text-align: right;
+  }
+  table.tableProductos tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+/* tabla de reportes */
+
+  table.tableReportes {
+    position: relative;
+    top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E5E5E5;
+    width: 80%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.tableReportes td, table.tableReportes th {
+    border: 1px solid #E5E5E5;
+    padding: 3px 2px;
+  }
+  table.tableReportes tbody td {
+    font-size: 18px;
+  }
+  table.tableReportes tr:nth-child(even) {
+    background: #FFFFFF;
+  }
+  table.tableReportes thead {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  }
+  table.tableReportes thead tr{
+      height: 30px;
+  }
+  table.tableReportes tbody tr{
+      height: 30px;
+  }
+  table.tableReportes thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
+  table.tableReportes tfoot td {
+    font-size: 14px;
+  }
+  table.tableReportes tfoot .links {
+    text-align: right;
+  }
+  table.tableReportes tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
